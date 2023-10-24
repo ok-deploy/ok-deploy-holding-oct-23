@@ -1,0 +1,50 @@
+@import "vars.scss";
+
+@font-face {
+  font-family: "ABCDiatype";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/ABCDiatype-Medium.otf") format("opentype"),
+    url("/fonts/ABCDiatype-Medium.otf") format("woff"),
+    url("/fonts/ABCDiatype-Medium.otf") format("woff2");
+}
+
+html {
+  --100vh: 100vh;
+}
+
+html,
+body {
+  background: #000;
+  color: #fff;
+  overscroll-behavior: none;
+  -webkit-overscroll-behavior: none;
+  padding: 0;
+  margin: 0;
+  font-family: "ABCDiatype", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}

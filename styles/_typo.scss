@@ -1,0 +1,26 @@
+@mixin typo--small-caps($lineHeight: 1em) {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: $lineHeight;
+  font-weight: normal;
+}
+
+@mixin typo--body-16 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+@mixin typo--body-12 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.166rem;
+}
+
+@mixin typo--h1-34 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
