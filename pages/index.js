@@ -1,10 +1,10 @@
 import HomeQuery from "../graphql/Homepage.query";
 import styles from "../styles/pages/Home.module.scss";
 import { performQuery } from "../graphql/apollo-client.js";
-
 import copy from "copy-to-clipboard";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
+import workmark from "../images/okdeploy-logo-june-2023-black.png";
 
 const CopySpan = ({ value }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -52,6 +52,7 @@ const Home = ({ SingletonHoldingPage, SingletonContact }) => {
 
   return (
     <div className={`${styles.container}`}>
+      <img className={styles.wordmark} src={workmark.src} alt="OK Deploy" />
       <section>
         <p className={styles.body}>{body}</p>
       </section>
