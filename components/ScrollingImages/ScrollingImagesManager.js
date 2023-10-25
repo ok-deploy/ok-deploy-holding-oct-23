@@ -114,9 +114,6 @@ class ScrollingImagesManager {
 
     if (this.easeDeltaYToZero) {
       this.deltaY += 0 - this.deltaY * 0.05;
-      if (this.deltaY < 0.001) {
-        this.deltaY = 0;
-      }
     } else {
       this.deltaY = 0;
     }
