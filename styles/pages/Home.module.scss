@@ -6,11 +6,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 1.625rem;
-  padding: 2.5rem;
-
-  @media (max-width: 768px) {
-    padding: 1.25rem;
-  }
+  padding: 1.25rem;
 }
 
 .wordmark {
@@ -33,11 +29,12 @@
 .contact {
   @include typo--body-16;
   display: inline-block;
+  text-decoration: none;
 }
 
 .address {
   @include typo--body-16;
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 .contact--copy {
@@ -53,6 +50,7 @@
   cursor: copy;
   display: inline-flex;
   align-items: center;
+  text-decoration: none;
 }
 
 .copied {

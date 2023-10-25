@@ -6,6 +6,17 @@ import { useEffect, useState } from "react";
 import classNames from "classnames";
 import workmark from "../images/okdeploy-logo-june-2023-black.png";
 import Head from "next/head";
+// import ScrollingImages from "../components/ScrollingImages/ScrollingImages";
+
+import dynamic from "next/dynamic";
+
+const ScrollingImages = dynamic(
+  () => import("../components/ScrollingImages/ScrollingImages"),
+  {
+    loading: () => <div></div>,
+    ssr: false,
+  }
+);
 
 const CopySpan = ({ value }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -53,9 +64,11 @@ const Home = ({
     instagramProfile,
     linkedIn,
   } = SingletonContact;
-  const { body } = SingletonHoldingPage;
+  const { body, images } = SingletonHoldingPage;
   const { description, sharingImage } = SingletonSettings;
   const sharingImageUrl = `${sharingImage?.asset?.url}?fit=fill&w=1600&h=836`;
+
+  console.log(images);
 
   return (
     <>
@@ -117,6 +130,7 @@ const Home = ({
           </a>
         </section>
       </div>
+      <ScrollingImages images={images} />
     </>
   );
 };
