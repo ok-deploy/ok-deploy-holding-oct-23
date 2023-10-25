@@ -60,7 +60,7 @@ class ScrollingImagesManager {
     const MAX = 20;
     this.container.style.opacity = 1;
     if (this.prevTouchY !== null) {
-      this.deltaY = (e.touches[0].clientY - this.prevTouchY) * -1;
+      this.deltaY = (e.touches[0].clientY - this.prevTouchY) * -1.1;
       if (this.deltaY < -MAX) this.deltaY = -MAX;
       if (this.deltaY > MAX) this.deltaY = MAX;
       this.scrollY += this.deltaY * 0.15;
@@ -113,7 +113,7 @@ class ScrollingImagesManager {
     // }
 
     if (this.easeDeltaYToZero) {
-      this.deltaY += 0 - this.deltaY * 0.05;
+      this.deltaY += 0 - this.deltaY * 0.03;
     } else {
       this.deltaY = 0;
     }
