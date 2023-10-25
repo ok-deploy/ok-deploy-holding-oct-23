@@ -63,7 +63,7 @@ class ScrollingImagesManager {
 
   onTouchMove(e) {
     this.easeDeltaYToZero = true;
-    const MAX = 20;
+    const MAX = 100;
     this.container.style.opacity = 1;
     if (this.prevTouchY !== null) {
       this.deltaY = (e.touches[0].clientY - this.prevTouchY) * -1.1;
