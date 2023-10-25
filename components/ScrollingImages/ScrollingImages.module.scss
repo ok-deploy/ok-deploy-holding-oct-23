@@ -9,10 +9,15 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
-  gap: 3rem;
+  gap: 140px;
   background: rgba(#fff, 0.8);
   will-change: opacity;
+  transition: opacity 0.125s ease-in-out;
   pointer-events: none;
+
+  @media (max-width: 768px) {
+    gap: 100px;
+  }
 }
 
 .image {
