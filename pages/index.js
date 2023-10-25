@@ -68,8 +68,6 @@ const Home = ({
   const { description, sharingImage } = SingletonSettings;
   const sharingImageUrl = `${sharingImage?.asset?.url}?fit=fill&w=1600&h=836`;
 
-  console.log(images);
-
   return (
     <>
       <Head>
@@ -137,7 +135,6 @@ const Home = ({
 
 export async function getStaticProps({ previewData = {} }) {
   const gqlResult = await performQuery(HomeQuery, {}, previewData);
-  console.log(gqlResult.data);
 
   return {
     props: {
