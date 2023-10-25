@@ -16,6 +16,7 @@ class ScrollingImagesManager {
     this.animate = this.animate.bind(this);
     this.onWheel = this.onWheel.bind(this);
     this.onTouchMove = this.onTouchMove.bind(this);
+    this.onTouchStart = this.onTouchStart.bind(this);
     this.onTouchEnd = this.onTouchEnd.bind(this);
     this.images = [...container.querySelectorAll("img")].map(
       (image) => new ScrollingImage(image)
@@ -28,6 +29,7 @@ class ScrollingImagesManager {
     this.raf = requestAnimationFrame(this.animate);
     window.addEventListener("wheel", this.onWheel, { passive: true });
     window.addEventListener("touchmove", this.onTouchMove, { passive: true });
+    window.addEventListener("touchstart", this.onTouchStart, { passive: true });
     window.addEventListener("touchend", this.onTouchEnd, { passive: true });
     window.addEventListener("resize", debounce(this.onResize.bind(this), 99));
     this.onEndInteraction = debounce(this.onEndInteraction.bind(this), 999);
@@ -53,6 +55,10 @@ class ScrollingImagesManager {
         }, 0) +
         this.images.length * this.getGap(); // padding
     });
+  }
+
+  onTouchStart() {
+    this.deltaY = 0;
   }
 
   onTouchMove(e) {
