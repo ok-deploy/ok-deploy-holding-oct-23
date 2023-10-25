@@ -103,8 +103,8 @@ class ScrollingImagesManager {
     // this.container.style.opacity = Math.min(this.opacity, 1);
 
     this.images.forEach((image) => {
-      // image.update(delta * -0.025 + this.scrollY, this.totalHeight);
-      image.update(delta * -0.025 + this.deltaY * -1, this.totalHeight);
+      // image.update(delta * -0.025 + this.deltaY * -1, this.totalHeight);
+      image.update(this.deltaY * -1, this.totalHeight);
     });
     // if (this.deltaY > 0) {
     //   this.container.style.opacity = 1;
