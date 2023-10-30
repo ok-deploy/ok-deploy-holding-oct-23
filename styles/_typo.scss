@@ -5,11 +5,12 @@
   font-weight: normal;
 }
 
-@mixin typo--body-16 {
+@mixin typo--body-15 {
+  font-family: "ABCDiatype", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 0.9375rem;
+  line-height: 1.2rem;
 }
 
 @mixin typo--body-12 {

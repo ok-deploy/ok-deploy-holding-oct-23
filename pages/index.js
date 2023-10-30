@@ -4,7 +4,7 @@ import { performQuery } from "../graphql/apollo-client.js";
 import copy from "copy-to-clipboard";
 import { useEffect, useState } from "react";
 import classNames from "classnames";
-import workmark from "../images/okdeploy-logo-june-2023-black.png";
+import workmark from "../images/okdeploy-logo.svg";
 import Head from "next/head";
 // import ScrollingImages from "../components/ScrollingImages/ScrollingImages";
 

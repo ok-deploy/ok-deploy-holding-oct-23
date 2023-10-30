@@ -7,7 +7,7 @@
   justify-content: center;
   gap: 1.625rem;
   padding: 1.25rem;
-  @include typo--body-16;
+  @include typo--body-15;
 }
 
 .wordmark {
@@ -16,7 +16,7 @@
 }
 
 .body {
-  @include typo--body-16;
+  @include typo--body-15;
   max-width: 55ch;
   white-space: pre-line;
   margin: 0;
@@ -24,17 +24,17 @@
 
 .heading {
   margin: 0;
-  @include typo--body-16;
+  @include typo--body-15;
 }
 
 .contact {
-  @include typo--body-16;
+  @include typo--body-15;
   display: inline-block;
   text-decoration: none;
 }
 
 .address {
-  @include typo--body-16;
+  @include typo--body-15;
   white-space: pre-wrap;
 }
 
@@ -58,13 +58,13 @@
   position: absolute;
   left: 0;
   opacity: 0;
-  @include typo--body-16;
+  @include typo--body-15;
 }
 
 .copied,
 .label {
   transition: opacity 0.1s ease-in;
-  @include typo--body-16;
+  @include typo--body-15;
 }
 
 .contact--copied .copied {

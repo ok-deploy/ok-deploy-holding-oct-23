@@ -6,10 +6,10 @@ const nextConfig = {
       test: /\.(glsl|vs|fs|vert|frag)$/,
       use: ["raw-loader", "glslify-loader"],
     });
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
-    });
+    // config.module.rules.push({
+    //   test: /\.svg$/,
+    //   use: ["@svgr/webpack"],
+    // });
 
     return config;
   },
