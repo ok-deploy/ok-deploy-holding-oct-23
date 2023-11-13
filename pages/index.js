@@ -77,7 +77,7 @@ const Home = ({ SingletonHoldingPage }) => {
         <meta name="description" content={description} />
         <link
           rel="preload"
-          href="/fonts/NeueMontreal-Regular.woff"
+          href="/fonts/RadioGrotesk-Regular.woff"
           as="font"
           crossOrigin=""
         />

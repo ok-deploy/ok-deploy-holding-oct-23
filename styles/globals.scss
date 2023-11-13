@@ -18,6 +18,14 @@
   src: url("/fonts/NeueMontreal-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "RadioGrotesk";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/RadioGrotesk-Regular.woff") format("woff");
+}
+
 html {
   --100vh: 100vh;
 }
@@ -31,7 +39,7 @@ body {
   -webkit-overscroll-behavior: none;
   padding: 0;
   margin: 0;
-  font-family: "NeueMontreal", sans-serif;
+  font-family: "RadioGrotesk", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
