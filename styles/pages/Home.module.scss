@@ -2,6 +2,8 @@
 @import "../typo";
 
 .container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +15,11 @@
 .wordmark {
   width: 8rem;
   height: auto;
+}
+
+.heading {
+  @include typo--body-15;
+  text-transform: uppercase;
 }
 
 .body {
@@ -44,7 +51,7 @@
   display: inline-block;
   background: transparent;
   outline: none;
-  color: #000;
+  color: inherit;
   padding: 0;
   margin: 0;
   position: relative;

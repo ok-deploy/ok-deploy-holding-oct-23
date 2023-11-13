@@ -6,11 +6,12 @@
 }
 
 @mixin typo--body-15 {
-  font-family: "ABCDiatype", sans-serif;
+  font-family: "NeueMontreal", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.9375rem;
   line-height: 1.2rem;
+  letter-spacing: 0.02em;
 }
 
 @mixin typo--body-12 {
@@ -18,6 +19,7 @@
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.166rem;
+  letter-spacing: 0.02em;
 }
 
 @mixin typo--h1-34 {

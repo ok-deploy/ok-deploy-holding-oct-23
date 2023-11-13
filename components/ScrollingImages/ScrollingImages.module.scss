@@ -21,6 +21,10 @@
   }
 }
 
+html:global(.dark) .container {
+  background: rgba(#000, 0.8);
+}
+
 .image {
   width: 33%;
   left: 0;

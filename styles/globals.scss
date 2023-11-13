@@ -10,6 +10,14 @@
     url("/fonts/ABCDiatype-Medium.otf") format("woff2");
 }
 
+@font-face {
+  font-family: "NeueMontreal";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("/fonts/NeueMontreal-Regular.woff") format("woff");
+}
+
 html {
   --100vh: 100vh;
 }
@@ -23,7 +31,7 @@ body {
   -webkit-overscroll-behavior: none;
   padding: 0;
   margin: 0;
-  font-family: "ABCDiatype", sans-serif;
+  font-family: "NeueMontreal", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -31,6 +39,18 @@ body {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+}
+
+html.light,
+body.light {
+  background: #fff;
+  color: #000;
+}
+
+html.dark,
+body.dark {
+  background: #000;
+  color: #fff;
 }
 
 a {
