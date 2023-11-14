@@ -147,7 +147,7 @@ const Home = ({ SingletonHoldingPage }) => {
                 className={styles.contact}
                 target="_blank"
                 rel="noreferrer"
-                href={`https://www.linkedin.com/company/${linkedIn}`}
+                href={linkedIn}
               >
                 LinkedIn
               </a>
